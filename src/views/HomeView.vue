@@ -1,4 +1,47 @@
-<script setup>
+<script>
+
+export default {
+
+    data () {
+        return {
+          d: new Date(new Date().getTime() + 200 * 120 * 120 * 2000)
+        }
+    },
+    mounted () {
+        // default example
+        simplyCountdown('.simply-countdown-one', {
+            year: 2026,
+            month: 1,
+            day: 28
+        });
+
+        //jQuery example
+        $('#simply-countdown-losange').simplyCountdown({
+            year: d.getFullYear(),
+            month: d.getMonth() + 1,
+            day: d.getDate(),
+            enableUtc: false
+        });
+    }
+    
+  }
+
+//     // var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+
+// // default example
+// simplyCountdown('.simply-countdown-one', {
+//     year: 2026,
+//     month: 1,
+//     day: 28
+// });
+
+// //jQuery example
+// $('#simply-countdown-losange').simplyCountdown({
+//     year: d.getFullYear(),
+//     month: d.getMonth() + 1,
+//     day: d.getDate(),
+//     enableUtc: false
+// });
 
 </script>
 
@@ -41,9 +84,9 @@
 			
 		</div>
 	</nav>
-
 	<header id="fh5co-header" class="fh5co-cover bg-fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
+		<div class="overlay">
+    </div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
@@ -51,14 +94,19 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Kamis &amp; Greg</h1>
 							<h2>We Are Getting Married!</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
+              <div class="simply-countdown simply-countdown-one"> </div>
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
+    
+
 	</header>
+
 
 	<div id="fh5co-couple">
 		<div class="container">
@@ -521,12 +569,12 @@
 	</div>
 </template>
 
-<style scoped>
+<style>
 
 .bg-fh5co-cover {
   background-image:url(@/assets/images/img_bg_2.jpg);
-}
 
+}
 
 
 </style>
