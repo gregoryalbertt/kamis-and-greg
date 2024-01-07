@@ -123,7 +123,7 @@ export default {
 						<img src="@/assets/images/groom.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
-						<h3>Joefrey Mahusay</h3>
+						<h3>Greg</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
 					</div>
 				</div>
@@ -133,7 +133,7 @@ export default {
 						<img src="@/assets/images/bride.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
-						<h3>Sheila Mahusay</h3>
+						<h3>Kamis</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
 					</div>
 				</div>
@@ -141,7 +141,7 @@ export default {
 		</div>
 	</div>
 
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(@/assets/images/img_bg_3.jpg);">
+	<div id="fh5co-event" class="fh5co-bg">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -507,7 +507,7 @@ export default {
 	</div>
 
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+	<div id="fh5co-started" class="fh5co-bg fh5co-started">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
@@ -576,5 +576,12 @@ export default {
 
 }
 
+.fh5co-bg {
+  background-image:url(@/assets/images/img_bg_3.jpg);
+}
+
+.fh5co-started {
+  background-image:url(@/assets/images/img_bg_4.jpg);
+}
 
 </style>
